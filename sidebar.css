@@ -1,0 +1,41 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    background-color: #436ca9;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 32px;
+    margin-left: 50px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 80px 32px;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar img{
+    padding: 6px 6px 6px 32px;
+    max-width: 30%;
+  }
+  .sidebar img:hover{
+    transform: scale(1.5); 
+    transition: all 250ms ease;
+
+  }
