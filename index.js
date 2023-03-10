@@ -4,6 +4,7 @@
 function updateTemp() {
 	console.log("YO TESING ONLOAD");
 	temp = document.getElementById('temp');
+	timeH1 = document.getElementById('time');
 	
 	
 	fetch('data.json')
@@ -12,6 +13,7 @@ function updateTemp() {
 		})
 		.then(function (data) {
 			temp.innerHTML = data.temp + "<sup>o</sup>";
+			timeH1.innerHTML = data.time;
 			console.log(data);
 		})
 		.catch(function (err) {
@@ -23,6 +25,7 @@ function updateTemp() {
 function updateHumidity() {
 	setInterval(() => {
 	humidity = document.getElementById('humidity');
+	timeH1 = document.getElementById('time');
 
 	fetch('data.json')
 		.then(function (response) {
@@ -30,6 +33,8 @@ function updateHumidity() {
 		})
 		.then(function (data) {
 			humidity.innerHTML = data.humidity + "%";
+			timeH1.innerHTML = data.time;
+
 			console.log(data);
 		})
 		.catch(function (err) {
