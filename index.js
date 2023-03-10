@@ -17,7 +17,7 @@ function updateTemp() {
 		.catch(function (err) {
 			console.log(err);
 		});
-	setTimeout(updateTemp, 2000);
+	setTimeout(updateTemp, 10000);
 }
 
 function updateHumidity() {
@@ -36,7 +36,7 @@ function updateHumidity() {
 			console.log(err);
 		});
 		
-		},2000);
+		},10000);
 
 	
 }
