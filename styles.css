@@ -58,6 +58,10 @@
 body {
 	background: linear-gradient(#ffffff,#629df6);
     background-size: 150% 150%;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #animated{
