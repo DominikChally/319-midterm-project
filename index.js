@@ -11,15 +11,16 @@ function updateTemp() {
 			return response.json();
 		})
 		.then(function (data) {
-			temp.innerHTML = data.temp;
+			temp.innerHTML = data.temp + "<sup>o</sup>";
 		})
 		.catch(function (err) {
 			console.log(err);
 		});
-	setTimeout(updateTemp, 5000);
+	setTimeout(updateTemp, 2000);
 }
 
 function updateHumidity() {
+	setInterval(() => {
 	humidity = document.getElementById('humidity');
 
 	fetch('data.json')
@@ -27,11 +28,14 @@ function updateHumidity() {
 			return response.json();
 		})
 		.then(function (data) {
-			humidity.innerHTML = data.temp;
+			humidity.innerHTML = data.humidity;
 		})
 		.catch(function (err) {
 			console.log(err);
 		});
-	setTimeout(updateHumidity, 5000);
+		
+		},2000);
+
+	
 }
 
