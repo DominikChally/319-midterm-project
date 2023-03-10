@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="sidebar menu" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeBar()">&times;</a>
+        <a href="index.html">
+          <img src="images/home.png" alt="home" >
+        </a>
+        <a href="temperature.html">
+          <img src="images/temperature.png" alt="temperature">
+        </a>
+        <a href="humidity.html">
+          <img src="images/drop.png" alt="Humidity">
+        </a>
+        <a href="credits.html">
+          <img src="images/account.png" alt="credits">
+        </a>
+      </div>
+    
+      <span style="font-size:30px;cursor:pointer;font-family: 'Montserrat',serif; color: #436ca9; z-index: 1;" onclick="openBar()">&#9662; menu</span>
+      
+      <script>
+      function openBar() {
+        document.getElementById("sidebar menu").style.width = "175px";
+      }
+      
+      function closeBar() {
+        document.getElementById("sidebar menu").style.width = "0";
+      }
+      </script>
+    <p class="pageHeader">TEMPERATURE</p>
+    <img src="images/raspberryPiLogo.png" alt="Logo" class="center">
+    
+    <h1 style="text-align: center; color: white;font-family: 'Montserrat',serif;font-size: 72px;font-weight: bolder;">
+        76 <sup>o</sup>
+    </h1>
+
+    
+</body>
+</html>
