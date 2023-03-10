@@ -10,7 +10,8 @@
     transition: 0.5s;
     padding-top: 30px;
   }
-  .sidebar .closebtn {
+  .sidebar .exitBtn {
+    cursor: pointer;
     position: absolute;
     top: 0;
     right: 25px;
