@@ -37,7 +37,7 @@ while True:
         raise error
         
     print(data)
-    sleep(2.0)
+    sleep(10.0)
     
     
 
