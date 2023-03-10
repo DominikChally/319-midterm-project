@@ -2,7 +2,6 @@
 
 
 function updateTemp() {
-	console.log("YO TESING ONLOAD");
 	temp = document.getElementById('temp');
 	timeH1 = document.getElementById('time');
 	
@@ -19,11 +18,11 @@ function updateTemp() {
 		.catch(function (err) {
 			console.log(err);
 		});
-	setTimeout(updateTemp, 10000);
+	setTimeout(updateTemp, 30000);
 }
 
 function updateHumidity() {
-	setInterval(() => {
+	
 	humidity = document.getElementById('humidity');
 	timeH1 = document.getElementById('time');
 
@@ -40,9 +39,8 @@ function updateHumidity() {
 		.catch(function (err) {
 			console.log(err);
 		});
-		
-		},10000);
 
+	setTimeout(updateHumidity, 30000);
 	
 }
 

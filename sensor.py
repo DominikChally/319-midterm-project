@@ -36,8 +36,7 @@ while True:
         dht_device.exit()
         raise error
         
-    print(data)
-    sleep(10.0)
+    sleep(30.0)
     
     
 
