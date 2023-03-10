@@ -20,6 +20,7 @@ function updateTemp() {
 }
 
 function updateHumidity() {
+	console.log("test")
 	humidity = document.getElementById('humidity');
 
 	fetch('data.json')
@@ -27,7 +28,7 @@ function updateHumidity() {
 			return response.json();
 		})
 		.then(function (data) {
-			humidity.innerHTML = data.temp;
+			humidity.innerHTML = data.humidity;
 		})
 		.catch(function (err) {
 			console.log(err);

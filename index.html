@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="sidebar.css">  
+    <link rel="stylesheet" href="styles.css">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
@@ -30,21 +30,22 @@
     </a>
   </div>
 
-  <span style="font-size:30px;cursor:pointer;font-family: Arial; z-index: 1;" onclick="openBar()">&#9662; menu</span>
-  
+  <span style="font-size:30px;cursor:pointer;font-family: 'Montserrat', sans-serif;color: #436ca9; z-index: 1;" onclick="openBar()">&#9662; menu</span>
   <script>
-  function openBar() {
-    document.getElementById("sidebar menu").style.width = "200px";
-  }
-  
-  function closeBar() {
-    document.getElementById("sidebar menu").style.width = "0";
-  }
-  </script>
-  <p>
+    function openBar() {
+      document.getElementById("sidebar menu").style.width = "200px";
+    }
     
-  </p>
-
+    function closeBar() {
+      document.getElementById("sidebar menu").style.width = "0";
+    }
+    </script>
+    <p class="pageHeader" id="animated">Welcome.</p>
+    <h1 style="text-align: center;font-family: 'Montserrat',serif;" id="animated">This project was developed by Jay Patel and Dominik Chally.</h1>
+    <h2 style="text-align: center;font-family: 'Montserrat',serif;" id="animated">Please use the navigation bar to continue.</h2>
+    <img src="images/raspberryPiLogo.png" alt="raspberryPiLogo" class="center" id="animated">
+  
+  
 
      
   </body>
