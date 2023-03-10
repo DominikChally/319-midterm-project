@@ -12,6 +12,7 @@ function updateTemp() {
 		})
 		.then(function (data) {
 			temp.innerHTML = data.temp + "<sup>o</sup>";
+			console.log(data);
 		})
 		.catch(function (err) {
 			console.log(err);
@@ -28,7 +29,8 @@ function updateHumidity() {
 			return response.json();
 		})
 		.then(function (data) {
-			humidity.innerHTML = data.humidity;
+			humidity.innerHTML = data.humidity + "%";
+			console.log(data);
 		})
 		.catch(function (err) {
 			console.log(err);
